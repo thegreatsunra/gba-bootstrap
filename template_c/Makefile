@@ -97,7 +97,7 @@ CXXFLAGS	+= -std=gnu++14 $(WARNFLAGS) $(DEFINES) $(ARCH) \
 
 LDFLAGS		:= -mthumb -mthumb-interwork $(LIBDIRSFLAGS) \
 		   -Wl,-Map,$(MAP) -Wl,--gc-sections \
-		   -specs=nano.specs -T source/sys/gba_cart.ld \
+		   -T source/sys/gba_cart.ld \
 		   -Wl,--start-group $(LIBS) -Wl,--end-group
 
 # Intermediate build files
